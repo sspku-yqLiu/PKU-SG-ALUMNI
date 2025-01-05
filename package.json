@@ -8,5 +8,17 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass-embedded": "^1.83.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.3.0",
+    "antd-mobile": "^5.38.1",
+    "bootstrap": "^5.3.3",
+    "clsx": "^2.1.1",
+    "react-bootstrap": "^2.10.7"
+  }
 }
