@@ -25,7 +25,7 @@ export default function FeeQuery() {
       <TextField
         style={{ width: 120 }}
         id="outlined-basic"
-        label="毕业年份"
+        label="入学年份"
         variant="outlined"
         value={query.year}
         onChange={(e) => setQuery({ ...query, year: e.target.value })}

@@ -26,7 +26,8 @@
     "fork-ts-checker-webpack-plugin": "^9.0.2",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1",
-    "webpack": "^5.97.1"
+    "webpack": "^5.97.1",
+    "@pku-sg/crypto": "workspace:*"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",

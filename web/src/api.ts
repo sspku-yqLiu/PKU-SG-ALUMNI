@@ -1,20 +1,27 @@
 import axios from "axios";
 
-export function getFeePaymentStatus({
+// 使用环境变量
+const API_URL = import.meta.env.VITE_API_URL;
+
+export async function getFeePaymentStatus({
   year,
   name,
 }: {
   year: string;
   name: string;
 }) {
-  return axios.post<{ paid: boolean }>("http://localhost:3000/api/feeQuery", {
+  const res = await axios.post<{ paid: boolean }>(`${API_URL}/feeQuery`, {
     year,
     name,
   });
+
+  return res;
 }
 
-export function getActivities() {
-  return axios.post<{ activities: { title: string; date: string }[] }>(
-    "http://localhost:3000/api/timeline"
-  );
+export async function getActivities() {
+  const res = await axios.post<{
+    activities: { title: string; date: string }[];
+  }>(`${API_URL}/timeline`);
+
+  return res;
 }

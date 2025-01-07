@@ -16,6 +16,10 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
-  }
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@pku-sg/*": ["../packages/*"] // 添加路径映射
+    }
+  },
+  // "include": ["src/**/*", "../packages/**/*"]
 }
